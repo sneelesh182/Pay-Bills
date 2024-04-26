@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/414ae88f0d.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #f9c546;
+      }
+      h2 {
+        animation: a2 8s infinite;
+        margin-top: 20%;
+        color: white;
+      }
+      div#box > div {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #ffe092;
+        position: absolute;
+        left: 40%;
+        top: 43%;
+        display:grid;
+        place-items:center;
+      }
+      div#box {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: relative;
+        margin: auto;
+        bottom: 250px;
+        left: 200px;
+        animation:icon 4s infinite;
+      }
+      div#box > div:nth-of-type(1) {
+        transform:translateX(160px);
+        
+      }
+      div#box > div:nth-of-type(2) {
+       transform:translateX(-140px);
+      }
+      div#box > div:nth-of-type(3) {
+       transform:translateY(-150px);
+      }
+      div#box > div:nth-of-type(4) {
+       transform:translateY(140px);
+      }
+      div#box > div:nth-of-type(5) {
+       transform:translate(-110px,-100px);
+      }
+      div#box > div:nth-of-type(6) {
+       transform:translate(-110px , 95px);
+      }
+      div#box > div:nth-of-type(7) {
+       transform:translate(110px , -105px);
+      }
+      div#box > div:nth-of-type(8) {
+       transform:translate(110px , 100px);
+      }
+      @keyframes a2 {
+        50% {
+          transform: translateX(-150px);
+          color: silver;
+        }
+        100% {
+          transform: translateX(350px);
+          color: rgb(49, 47, 47);
+        }
+      }
+      @keyframes icon {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pay bills instantly</h2>
+    <div id="box">
+      <div><i class="fa-brands fa-youtube"></i></div>
+      <div><i class="fa-brands fa-facebook"></i></div>
+      <div><i class="fa-brands fa-twitter"></i></div>
+      <div><i class="fa-solid fa-camera"></i></div>
+      <div><i class="fa-solid fa-house"></i></div>
+      <div><i class="fa-solid fa-phone"></i></div>
+      <div><i class="fa-solid fa-laptop"></i></div>
+      <div><i class="fa-solid fa-droplet"></i></div>
+    </div>
+  </body>
+</html>
